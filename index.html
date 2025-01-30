@@ -1,11 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nature's Platter</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./c2-assets/healthy.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./c2-assets/healthy.png"
+      type="image/x-icon"
+    />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
@@ -14,17 +18,143 @@
     </style>
   </head>
   <body>
-  <header>
+    <header id="header" class="h-screen bg-linear-to-b from-[#FFFFFF] to-[#EFEBE3]">
+      <nav class="m-auto">
+        <ul class="flex justify-around items-center h-20 sm:flex-wrap">
+          <div class="nav-left-logo ">
+            <li>
+                <div class="logo-left ">   <a href=""><img src="./c2-assets/logo-header.png" alt="" /></a></div>
+           
+            </li>
+          </div>
 
-  </header>
-  <main>
-    <section id="hero-section"></section>
-    <section id="service-section"></section>
-    <section id="populer-product-section"></section>
-    <section id="arrival-and-offers-section"></section>
-    <section id=""></section>
-  </main>
-  <footer></footer>
+          <div class="middle-nav-links gap-10 text-xl hidden md:flex">
+            <li><a href="" class="hover:text-green-700">Product</a></li>
+            <li><a href="" class="hover:text-green-700">Services</a></li>
+            <li><a href="" class="hover:text-green-700">Contact us</a></li>
+          </div>
+
+          <div
+            class="nav-right-buttons text-xl hidden md:flex gap-5 items-center"
+          >
+            <li>
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000" fill="none">
+                    <path d="M17.5 17.5L22 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href=""
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  color="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M6 6H22"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <circle
+                    cx="6"
+                    cy="20"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <circle
+                    cx="17"
+                    cy="20"
+                    r="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M8 20L15 20"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  /></svg></a>
+            </li>
+            <li>
+              <a href=""
+                ><button
+                  class="primary-btn text-xl hover:bg-[#179800] hover:text-white cursor-pointer"
+                >
+                  Login
+                </button></a
+              >
+            </li>
+            <li>
+              <a href=""
+                ><button
+                  class="primary-btn text-xl text-white outline-none bg-[#179800] cursor-pointer hover:bg-transparent hover:text-black"
+                >
+                  Register
+                </button></a
+              >
+            </li>
+            
+          </div>
+          <span id="hamburger" class="md:hidden lg:hidden visible"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                color="#00ab06"
+                fill="none"
+              >
+                <path
+                  d="M4 5L20 5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 12L20 12"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 19L20 19"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                /></svg></span>
+        </ul>
+      </nav>
+      <hr class="w-full border-green-500 md:hidden visible" />
+    </header>
+    <main>
+      <section id="hero-section"></section>
+      <section id="service-section"></section>
+      <section id="populer-product-section"></section>
+      <section id="arrival-and-offers-section"></section>
+      <section id="extra-section"></section>
+    </main>
+    <footer></footer>
   </body>
 </html>
-
