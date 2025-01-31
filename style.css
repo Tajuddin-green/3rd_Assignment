@@ -13,11 +13,12 @@
   border-radius: 4px;
 }
 
-root{
-    --secondary-color:  rgb(17, 17, 17);
+:root{
+    --secondary-color:  #111111;
 
 
 }
+
 .hero-section{
     margin-top: 80px;
 }
@@ -31,4 +32,54 @@ root{
 }
 .hero-img{
     margin-top: 30px;
+}
+
+#service-section .card-container p{
+    color: var(--secondary-color);
+    opacity: .70;
+    font-size: 1.25rem;
+
+}
+
+#service-section{
+margin: auto;
+}
+#services-id-section{
+    margin: 80px auto 50px auto;
+    max-width: 80rem;
+}
+.card{
+    padding: 2rem;
+}
+.card-img{
+    /* background-color: white; */
+    padding: 20px;
+    border-radius: 100px;
+}
+#service{
+    margin-bottom: 30px;
+}
+
+#products-section{
+    max-width: 80rem;
+}
+
+
+
+#products-section{
+margin: auto;
+
+}
+@media screen and (max-width:425px){
+    #services-section{
+        margin: 50px 20px 50px 20px;
+    }
+
+    
+}
+@media screen and  (max-width: 769px)  {
+    
+    #services-section{
+        margin: 50px 20px 50px 20px;
+    }
 }
