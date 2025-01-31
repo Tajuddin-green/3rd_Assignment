@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
 * {
+  
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,73 +14,100 @@
   border-radius: 4px;
 }
 
-:root{
-    --secondary-color:  #111111;
-
-
+:root {
+  --secondary-color: #111111;
 }
 
-.hero-section{
-    margin-top: 80px;
+.hero-section {
+  margin-top: 80px;
 }
-.hero-section p{
-    color: var(--secondary-color);
-    opacity: .80;
-   
+.hero-section p {
+  color: var(--secondary-color);
+  opacity: 0.8;
 }
-.hero-para{
-    margin-top: 30px;
+.hero-para {
+  margin-top: 30px;
 }
-.hero-img{
-    margin-top: 30px;
-}
-
-#service-section .card-container p{
-    color: var(--secondary-color);
-    opacity: .70;
-    font-size: 1.25rem;
-
+.hero-img {
+  margin-top: 30px;
 }
 
-#service-section{
-margin: auto;
+#service-section .card-container p {
+  color: var(--secondary-color);
+  opacity: 0.7;
+  font-size: 1.25rem;
+}
+
+#service-section, #popular {
+  margin: auto;
 }
 #services-id-section{
-    margin: 80px auto 50px auto;
+  margin: 80px auto 50px auto;
+  max-width: 80rem;
+}
+.card {
+  padding: 2rem;
+}
+.card-img {
+  /* background-color: white; */
+  padding: 20px;
+  border-radius: 100px;
+}
+#service, popular {
+  margin-bottom: 30px;
+}
+
+#products-section {
+  max-width: 80rem;
+}
+
+
+/* important */
+
+
+
+
+#popular,#arrival{
+    margin: auto;
     max-width: 80rem;
 }
-.card{
-    padding: 2rem;
-}
-.card-img{
-    /* background-color: white; */
-    padding: 20px;
-    border-radius: 100px;
-}
-#service{
-    margin-bottom: 30px;
-}
 
-#products-section{
-    max-width: 80rem;
+
+
+/* important */
+
+#products-section {
+  margin: auto;
+}
+#popular-product-section {
+  margin-top: 100px;
 }
 
 
 
-#products-section{
-margin: auto;
-
+#margin-top{
+    min-height: 110%;
 }
-@media screen and (max-width:425px){
-    #services-section{
-        margin: 50px 20px 50px 20px;
-    }
-
-    
+@media screen and (max-width: 425px) {
+  #services-id-section,
+  #products-section {
+    margin: 50px 20px 50px 20px;
+  }
+  /* #popular{
+    margin-bottom: 30px; 
+} */
 }
-@media screen and  (max-width: 769px)  {
-    
-    #services-section{
-        margin: 50px 20px 50px 20px;
-    }
+@media screen and (max-width: 769px) {
+  #services-id-section,
+  #products-section,
+  #popular
+  {
+    margin: 50px 20px 50px 20px;
+  }
+ 
+}
+
+
+.hide{
+    display: none;
 }
